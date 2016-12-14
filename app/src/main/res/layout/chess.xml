@@ -9,8 +9,40 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="me.andrewyw.android79.Chess">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play a Game"
+        android:id="@+id/playbutton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View History"
+        android:id="@+id/historybutton"
+        android:layout_below="@+id/playbutton"
+        android:layout_alignLeft="@+id/playbutton"
+        android:layout_alignStart="@+id/playbutton"
+        android:layout_marginTop="22dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Chess"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/exitbutton"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/historybutton"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
