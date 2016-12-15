@@ -5,21 +5,29 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class Chess extends AppCompatActivity {
+public class Game extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.chess);
+        setContentView(R.layout.activity_game);
     }
 
-    public void play(View view){
-        Intent intent = new Intent(this, Game.class);
+    public void home(View view) {
+        Intent intent = new Intent(this, Chess.class);
         startActivity(intent);
     }
 
-    public void history(View view) {
-        Intent intent = new Intent(this, History.class);
-        startActivity(intent);
+    public void resign(View view) {
+
     }
+
+    public void draw(View view) {
+
+    }
+
+    public void undo(View view) {
+
+    }
+
 }
