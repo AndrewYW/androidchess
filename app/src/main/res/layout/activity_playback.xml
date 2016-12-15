@@ -24,40 +24,21 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Draw"
-        android:id="@+id/drawButton"
+        android:text="Next Move"
+        android:id="@+id/nextMoveButton"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:nestedScrollingEnabled="false" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Resign"
-        android:id="@+id/resignButton"
-        android:layout_below="@+id/backgroundBoard"
-        android:layout_toEndOf="@+id/undoButton" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Undo"
-        android:id="@+id/undoButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/turnText" />
+        android:layout_centerHorizontal="true"
+        android:onClick="undo" />
 
     <GridLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/backButton"
-        android:layout_above="@+id/drawButton"
         android:columnCount="8"
         android:rowCount="8"
-        android:id="@+id/backgroundBoard">
+        android:id="@+id/backgroundBoard"
+        android:layout_above="@+id/nextMoveButton">
 
         <!-- Row 7: cells 0-7 -->
         <ImageView
@@ -468,8 +449,8 @@
         android:columnCount="8"
         android:rowCount="8"
         android:layout_alignTop="@+id/backgroundBoard"
-        android:layout_above="@+id/drawButton"
-        android:layout_alignParentStart="true"></GridLayout>
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/nextMoveButton"></GridLayout>
 
     <EditText
         android:layout_width="wrap_content"
@@ -477,14 +458,5 @@
         android:id="@+id/turnText"
         android:layout_alignBottom="@+id/backButton"
         android:layout_alignEnd="@+id/backgroundBoard"
-        android:layout_toEndOf="@+id/drawButton" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play move"
-        android:id="@+id/playButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/backgroundBoard" />
+        android:layout_toEndOf="@+id/backButton" />
 </RelativeLayout>

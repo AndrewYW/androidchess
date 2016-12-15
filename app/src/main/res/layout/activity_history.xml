@@ -16,7 +16,8 @@
         android:text="back"
         android:id="@+id/historyBackButton"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="historyHome" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -25,8 +26,7 @@
         android:text="Sort by Name"
         android:id="@+id/nameSortButton"
         android:layout_alignTop="@+id/dateSortButton"
-        android:layout_toStartOf="@+id/dateSortButton"
-        android:onClick="sortByName" />
+        android:layout_toStartOf="@+id/dateSortButton" />
 
     <Button
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
         android:id="@+id/dateSortButton"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:onClick="sortByDate" />
+        android:nestedScrollingEnabled="false" />
 
     <ListView
         android:layout_width="match_parent"
@@ -43,6 +43,5 @@
         android:id="@+id/historyList"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/historyBackButton"
-        android:background="#6a91fb"
         android:divider="#2687ff" />
 </RelativeLayout>
