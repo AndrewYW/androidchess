@@ -14,7 +14,7 @@ public class Chess extends AppCompatActivity {
     }
 
     public void play(View view){
-        Intent intent = new Intent(this, Game.class);
+        Intent intent = new Intent(this, PlayGame.class);
         startActivity(intent);
     }
 

@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Game" />
+        <activity android:name=".PlayGame" />
         <activity android:name=".History" />
         <activity android:name=".Playback"></activity>
     </application>

@@ -22,6 +22,7 @@ public class Playback extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_playback);
 
+        int counter = 0;
 
         Button playNext = (Button)findViewById(R.id.nextMoveButton);
         playNext.setOnClickListener(new View.OnClickListener() {
@@ -37,3 +38,4 @@ public class Playback extends AppCompatActivity {
         startActivity(intent);
     }
 }
+

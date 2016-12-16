@@ -43,23 +43,26 @@ public class History extends AppCompatActivity {
         setContentView(R.layout.activity_history);
 
         //Load games from file
+        boolean loaded = false;
         try {
             FileInputStream stream = openFileInput("");
             BufferedReader br = new BufferedReader(new InputStreamReader(stream));
             //rest of loading from file according to input style
+
         }catch (IOException e){
             //No file/empty file
             System.out.println("IO error");
         }
-
-        listview = (ListView)findViewById(R.id.historyList);
-        listview.setAdapter(new ArrayAdapter<HistoryObject>(this, R.layout.historygame,games));
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                playback(position);
-            }
-        });
+        if(loaded) {
+            listview = (ListView) findViewById(R.id.historyList);
+            listview.setAdapter(new ArrayAdapter<HistoryObject>(this, R.layout.historygame, games));
+            listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    playback(position);
+                }
+            });
+        }
     }
 
     public void playback(int pos){

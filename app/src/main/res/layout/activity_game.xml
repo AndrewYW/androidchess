@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="me.andrewyw.android79.Game">
+    tools:context=".PlayGame">
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -47,7 +47,7 @@
         android:text="Undo"
         android:id="@+id/undoButton"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/turnText" />
+        android:layout_toEndOf="@+id/drawButton" />
 
     <GridLayout
         android:layout_width="fill_parent"
@@ -475,9 +475,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/turnText"
-        android:layout_alignBottom="@+id/backButton"
-        android:layout_alignEnd="@+id/backgroundBoard"
-        android:layout_toEndOf="@+id/drawButton" />
+        android:text="White&apos;s Turn"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/backButton"
+        android:layout_centerHorizontal="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -486,5 +487,13 @@
         android:text="Play move"
         android:id="@+id/playButton"
         android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/backgroundBoard" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI"
+        android:id="@+id/AIButton"
+        android:layout_above="@+id/backgroundBoard"
         android:layout_alignEnd="@+id/backgroundBoard" />
 </RelativeLayout>
