@@ -9,6 +9,7 @@ public class Chess extends AppCompatActivity {
 
     public static Game g;
     public static GameRecs gr;
+    public static Recording recording;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

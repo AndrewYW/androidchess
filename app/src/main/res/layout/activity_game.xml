@@ -72,6 +72,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/a1"
+            android:tag="a1"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -87,6 +88,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/b1"
+            android:tag="b1"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -102,6 +104,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/c1"
+            android:tag="c1"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -117,6 +120,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/d1"
+            android:tag="d1"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -132,6 +136,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/e1"
+            android:tag="e1"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -147,6 +152,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/f1"
+            android:tag="f1"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -162,6 +168,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/g1"
+            android:tag="g1"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -177,6 +184,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/h1"
+            android:tag="h1"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -194,6 +202,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/a2"
+            android:tag="a2"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -209,6 +218,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/b2"
+            android:tag="b2"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -224,6 +234,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/c2"
+            android:tag="c2"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -239,6 +250,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/d2"
+            android:tag="d2"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -254,6 +266,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/e2"
+            android:tag="e2"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -269,6 +282,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/f2"
+            android:tag="f2"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -284,6 +298,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/g2"
+            android:tag="g2"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -299,6 +314,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/h2"
+            android:tag="h2"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -316,6 +332,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/a3"
+            android:tag="a3"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -331,6 +348,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/b3"
+            android:tag="b3"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -346,6 +364,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/c3"
+            android:tag="c3"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -361,6 +380,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/d3"
+            android:tag="d3"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -376,6 +396,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/e3"
+            android:tag="e3"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -391,6 +412,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/f3"
+            android:tag="f3"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -406,6 +428,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/g3"
+            android:tag="g3"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -421,6 +444,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/h3"
+            android:tag="h3"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -438,6 +462,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/a4"
+            android:tag="a4"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -453,6 +478,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/b4"
+            android:tag="b4"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -468,6 +494,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/c4"
+            android:tag="c4"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -483,6 +510,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/d4"
+            android:tag="d4"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -498,6 +526,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/e4"
+            android:tag="e4"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -513,6 +542,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/f4"
+            android:tag="f4"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -528,6 +558,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/g4"
+            android:tag="g4"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -543,6 +574,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/h4"
+            android:tag="h4"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -560,6 +592,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/a5"
+            android:tag="a5"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -575,6 +608,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/b5"
+            android:tag="b5"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -590,6 +624,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/c5"
+            android:tag="c5"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -605,6 +640,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/d5"
+            android:tag="d5"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -620,6 +656,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/e5"
+            android:tag="e5"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -635,6 +672,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/f5"
+            android:tag="f5"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -650,6 +688,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/g5"
+            android:tag="g5"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -665,6 +704,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/h5"
+            android:tag="h5"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -682,6 +722,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/a6"
+            android:tag="a6"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -697,6 +738,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/b6"
+            android:tag="b6"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -712,6 +754,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/c6"
+            android:tag="c6"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -727,6 +770,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/d6"
+            android:tag="d6"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -742,6 +786,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/e6"
+            android:tag="e6"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -757,6 +802,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/f6"
+            android:tag="f6"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -772,6 +818,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/g6"
+            android:tag="g6"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -787,6 +834,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/h6"
+            android:tag="h6"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -804,6 +852,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/a7"
+            android:tag="a7"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -819,6 +868,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/b7"
+            android:tag="b7"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -834,6 +884,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/c7"
+            android:tag="c7"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -849,6 +900,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/d7"
+            android:tag="d7"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -864,6 +916,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/e7"
+            android:tag="e7"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -879,6 +932,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/f7"
+            android:tag="f7"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -894,6 +948,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/g7"
+            android:tag="g7"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -909,6 +964,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/h7"
+            android:tag="h7"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -926,6 +982,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/a8"
+            android:tag="a8"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -941,6 +998,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/b8"
+            android:tag="b8"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -956,6 +1014,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/c8"
+            android:tag="c8"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -971,6 +1030,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/d8"
+            android:tag="d8"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -986,6 +1046,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/e8"
+            android:tag="e8"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -1001,6 +1062,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/f8"
+            android:tag="f8"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -1016,6 +1078,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/g8"
+            android:tag="g8"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -1031,6 +1094,7 @@
             android:layout_width="40dp"
             android:layout_height="45dp"
             android:id="@+id/h8"
+            android:tag="h8"
             android:clickable="true"
             android:onClick="imageClick"
             android:nestedScrollingEnabled="false" />
@@ -1040,7 +1104,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/turnText"
-        android:text="White&apos;s Turn"
         android:textAlignment="center"
         android:layout_alignTop="@+id/backButton"
         android:layout_centerHorizontal="true"

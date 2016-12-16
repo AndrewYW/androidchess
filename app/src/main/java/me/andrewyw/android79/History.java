@@ -51,14 +51,10 @@ public class History extends AppCompatActivity {
     public void playback(int pos){
         Bundle bundle = new Bundle();
 
-        Recording game = games.get(pos);
-        bundle.putInt(Playback.GAME_INDEX, pos);
-        bundle.putString(Playback.GAME_NAME, game.name);
-        bundle.putString(Playback.GAME_DATE, game.date);
-
+        Chess.recording = games.get(pos);
 
         Intent intent = new Intent(this, Playback.class);
-        intent.putExtras(bundle);
+
         startActivity(intent);
     }
 
