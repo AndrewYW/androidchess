@@ -7,10 +7,15 @@ import android.view.View;
 
 public class Chess extends AppCompatActivity {
 
+    public static Game g;
+    public static GameRecs gr;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chess);
+
+
     }
 
     public void play(View view){

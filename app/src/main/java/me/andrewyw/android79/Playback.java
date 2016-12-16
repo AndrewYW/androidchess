@@ -14,6 +14,7 @@ public class Playback extends AppCompatActivity {
     public static final String GAME_NAME = "gameName";
     public static final String GAME_DATE = "gameDate";
     public static final ArrayList<String> GAME_MOVES = null;
+    static int counter = 0;
 
     private int gameIndex;
 
@@ -22,13 +23,17 @@ public class Playback extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_playback);
 
-        int counter = 0;
+        Recording record;
+
 
         Button playNext = (Button)findViewById(R.id.nextMoveButton);
         playNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Dis is the playnext button thingy.
+                while(!Chess.g.players_turn(Chess.g.getRand())){
+                    Chess.g.players_turn(record.getCommand(counter));
+                }
+                counter++;
             }
         });
     }

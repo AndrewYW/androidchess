@@ -52,12 +52,7 @@ public class Recording implements Serializable{
     }
 
     public String toString(){
-        String out = "";
-        out = name +" "+date.toString();
-		/*for(int i=0;i<this.turns();i++){
-			out = out + " " +commands.get(i);
-		}*/
-        return out;
+        return name + "\n(" + date.toString() + ")";
     }
 
 

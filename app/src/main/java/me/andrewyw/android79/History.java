@@ -14,28 +14,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-class HistoryObject {
-    String name;
-    String date;
-    ArrayList<String> moves;
-
-    HistoryObject(String name, String date, ArrayList<String> moves){
-        this.name = name;
-        this.date = date;
-        this.moves = moves;
-    }
-
-    // Used by ListView
-    public String toString() {
-        return name + "\n(" + date + ")";
-    }
-
-}
 
 public class History extends AppCompatActivity {
 
     private ListView listview;
-    private ArrayList<HistoryObject> games;
+    private ArrayList<Recording> games;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +38,7 @@ public class History extends AppCompatActivity {
         }
         if(loaded) {
             listview = (ListView) findViewById(R.id.historyList);
-            listview.setAdapter(new ArrayAdapter<HistoryObject>(this, R.layout.historygame, games));
+            listview.setAdapter(new ArrayAdapter<Recording>(this, R.layout.historygame, games));
             listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -68,13 +51,11 @@ public class History extends AppCompatActivity {
     public void playback(int pos){
         Bundle bundle = new Bundle();
 
-        HistoryObject game = games.get(pos);
+        Recording game = games.get(pos);
         bundle.putInt(Playback.GAME_INDEX, pos);
         bundle.putString(Playback.GAME_NAME, game.name);
         bundle.putString(Playback.GAME_DATE, game.date);
 
-        //Need to read up on how to map string arraylists.
-        //bundle.putStringArrayList(Playback.GAME_MOVES, game.moves);
 
         Intent intent = new Intent(this, Playback.class);
         intent.putExtras(bundle);
