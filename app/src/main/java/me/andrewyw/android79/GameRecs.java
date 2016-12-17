@@ -13,7 +13,7 @@ import java.util.List;
 public class GameRecs implements Serializable{
     List<Recording> games;
     //FOR SERIALIZER
-    public static final String storeDir = "dat";
+    public static final String storeDir = "raw";
     public static final String storeFile = "records.dat";
     private static final long serialVersionUID = 1L;
 
@@ -24,7 +24,9 @@ public class GameRecs implements Serializable{
 
     //********************SERIALIZER********************
     public static void writeApp(GameRecs gr)	throws IOException {
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(storeDir + File.separator + storeFile));
+        File file = new File(storeFile);
+        file.createNewFile();
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(storeFile));
         oos.writeObject(gr);
         oos.close();
     }

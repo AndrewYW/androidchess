@@ -16,7 +16,11 @@ public class Chess extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chess);
 
-
+        try{
+            gr.readApp();
+        }catch(Exception e){
+            gr = null;
+        }
     }
 
     public void play(View view){

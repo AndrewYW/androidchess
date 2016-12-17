@@ -8,10 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 
@@ -25,20 +21,14 @@ public class History extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
 
-        //Load games from file
         boolean loaded = false;
-        try {
-            FileInputStream stream = openFileInput("");
-            BufferedReader br = new BufferedReader(new InputStreamReader(stream));
-            //rest of loading from file according to input style
+        //Load games from file
+        games = (ArrayList<Recording>)Chess.gr.games;
+        if(games != null){ loaded = true;}
 
-        }catch (IOException e){
-            //No file/empty file
-            System.out.println("IO error");
-        }
         if(loaded) {
             listview = (ListView) findViewById(R.id.historyList);
-            listview.setAdapter(new ArrayAdapter<Recording>(this, R.layout.historygame, games));
+            listview.setAdapter(new ArrayAdapter<>(this, R.layout.historygame, games));
             listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -49,7 +39,6 @@ public class History extends AppCompatActivity {
     }
 
     public void playback(int pos){
-        Bundle bundle = new Bundle();
 
         Chess.recording = games.get(pos);
 

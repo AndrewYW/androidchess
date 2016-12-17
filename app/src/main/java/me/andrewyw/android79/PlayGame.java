@@ -56,17 +56,16 @@ public class PlayGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
+
         Chess.g = new Game();
-        Chess.gr = new GameRecs();
+        if(Chess.gr == null){ Chess.gr = new GameRecs();}
         Chess.g.board.loadBoard();
-        String[] positions = Chess.g.getBoard();
         text = (TextView)findViewById(R.id.turnText);
         String player = (Chess.g.turn) ?"White":"Black";
         text.setText(player + "'s turn");
 
         GridLayout grid = (GridLayout)findViewById(R.id.backgroundBoard);
         int cellCount = grid.getChildCount();
-        System.out.println("cell count" + cellCount);
         for(int i = 0; i < cellCount; i++){
             ImageView img = (ImageView) grid.getChildAt(i);
             img.setOnClickListener(new View.OnClickListener() {
@@ -375,13 +374,13 @@ public class PlayGame extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             //Title confirmed
-                            Chess.gr.games.add(Chess.g.history.save(title.getText().toString()));
-                            try{
-                                Chess.gr.writeApp(Chess.gr);
-                            }
-                            catch(IOException e){
 
-                            }
+                                Chess.gr.games.add(Chess.g.history.save(title.getText().toString()));
+                                try {
+                                    Chess.gr.writeApp(Chess.gr);
+                                } catch (IOException e) {
+                                    System.out.println("Game recs write error: " + e);
+                                }
 
                         }
                     });
