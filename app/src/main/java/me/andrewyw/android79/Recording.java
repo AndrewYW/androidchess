@@ -11,7 +11,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Recording implements Serializable{
+public class Recording implements Serializable, Comparable<Recording>{
     String name;
     SimpleDate date;
     List<String> commands;
@@ -51,6 +51,27 @@ public class Recording implements Serializable{
         return this;
     }
 
+    public String getName() { return name; }
+    public String getDate() { return date.toString();}
+
+    public int compareTo(Recording r) {
+        if(this.getName().equalsIgnoreCase(r.getName())){
+            return 0;
+        }else if(!this.getName().equalsIgnoreCase(r.getName())){
+            return 1;
+        }else {
+            return -1;
+        }
+    }
+    public int compareDate(Recording r){
+        if(this.getDate().equalsIgnoreCase(r.getDate())){
+            return 0;
+        }else if(!this.getDate().equalsIgnoreCase(r.getDate())){
+            return 1;
+        }else {
+            return -1;
+        }
+    }
     public String toString(){
         return name + "\n(" + date.toString() + ")";
     }
