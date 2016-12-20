@@ -10,10 +10,11 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import static me.andrewyw.android79.Chess.ct;
+
 public class GameRecs implements Serializable{
     List<Recording> games;
     //FOR SERIALIZER
-    public static final String storeDir = "raw";
     public static final String storeFile = "records.dat";
     private static final long serialVersionUID = 1L;
 
@@ -24,15 +25,16 @@ public class GameRecs implements Serializable{
 
     //********************SERIALIZER********************
     public static void writeApp(GameRecs gr)	throws IOException {
-        File file = new File(storeFile);
+        File file = new File(ct.getFilesDir(), storeFile);
         file.createNewFile();
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(storeFile));
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
         oos.writeObject(gr);
         oos.close();
     }
 
     public static GameRecs readApp() throws IOException, ClassNotFoundException{
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(storeDir+File.separator+storeFile));
+        File file = new File(ct.getFilesDir(), storeFile);
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file));
         GameRecs gr = (GameRecs)ois.readObject();
         ois.close();
         return gr;

@@ -11,13 +11,14 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import static me.andrewyw.android79.Chess.ct;
+
 public class Recording implements Serializable, Comparable<Recording>{
     String name;
     SimpleDate date;
     List<String> commands;
     int plys;
     //FOR SERIALIZER
-    public static final String storeDir = "dat";
     public static final String storeFile = "rec.dat";
     private static final long serialVersionUID = 1L;
 
@@ -79,13 +80,15 @@ public class Recording implements Serializable, Comparable<Recording>{
 
     //********************SERIALIZER********************
     public static void writeApp(Recording rec)	throws IOException {
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(storeDir + File.separator + storeFile));
+        File file = new File(ct.getFilesDir(), storeFile);
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
         oos.writeObject(rec);
         oos.close();
     }
 
     public static Recording readApp() throws IOException, ClassNotFoundException{
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(storeDir+File.separator+storeFile));
+        File file = new File(ct.getFilesDir(), storeFile);
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file));
         Recording rec = (Recording)ois.readObject();
         ois.close();
         return rec;
